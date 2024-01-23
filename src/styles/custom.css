@@ -1,0 +1,57 @@
+.toggle {
+    font-size: 1rem; /* 👈 change this to scale */
+    border: 0.125em solid currentColor;
+    border-radius: 2em;
+    cursor: pointer;
+    display: block;
+    height: 2em;
+    position: relative;
+    width: 3.75em;
+  }
+  .toggle span {
+    background-color: #1f2937;
+    border-radius: 9999px;
+    display: block;
+    height: 1.8em;
+    left: 0em;
+    overflow: hidden;
+    position: absolute;
+    top: 0em;
+    text-indent: -9999px;
+    transition: left 0.25s;
+    width: 1.8em;
+    z-index: 2;
+  }
+ 
+  .toggle::before,
+  .toggle::after {
+    content: "";
+    display: block;
+    border-radius: 1em;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .toggle::after {
+    box-shadow: 0.25em 0.25em #1f2937;
+    height: 1.125em;
+    right: 0.5em;
+    top: 0.57m;
+    width: 1.125em;
+  }
+  
+  .toggle::before {
+    background-color: #ffc409;
+    height: 0.625em;
+    outline: 0.25em dotted #ffc409;
+    outline-offset: 0.125em;
+    left: 0.7em;
+    top: 0.6em;
+    width: 0.625em;
+  }
+  
+  input:checked ~ .toggle span {
+    left: 1.8em;
+    background-color: #ffc409;
+  }
+ 

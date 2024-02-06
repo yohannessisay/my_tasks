@@ -1,15 +1,8 @@
-import { createApp, h } from 'vue'
-import { createInertiaApp } from '@inertiajs/vue3'
-import './styles/main.css'  
-
-createInertiaApp({
-  resolve: name => {
-    const pages = import.meta.glob('./components/**/*.vue', { eager: true })
-    return pages[`./components/${name}.vue`]
-  },
-  setup({ el, App, props, plugin }) {
-    createApp({ render: () => h(App, props) })
-      .use(plugin)
-      .mount(el)
-  },
-})
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import "./styles/main.css";
+import "./styles/custom.css"
+const app = createApp(App);
+app.use(router);
+app.mount('#app');

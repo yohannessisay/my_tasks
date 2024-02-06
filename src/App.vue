@@ -3,9 +3,9 @@
 <template>
   
     <div
-      class="flex justify-center h-dvh p-4 bg-white dark:bg-gray-800 text-black dark:text-white transition-all ease-in-out duration-500"
+      class=" h-dvh  bg-white dark:bg-gray-800 text-black dark:text-white transition-all ease-in-out duration-500"
     >
-      <div class="fixed bottom-0 right-0 z-50 p-4">
+      <div class="fixed bottom-0 right-0 z-50 p-1">
         <input
           type="checkbox"
           class="sr-only toggled"
@@ -17,7 +17,8 @@
           <span>Toggle dark mode</span>
         </label>
       </div>
-      <Login />
+      <router-view></router-view>
+    
     </div>
  
 </template>

@@ -1,5 +1,5 @@
 .toggle {
-    font-size: 1rem; /* 👈 change this to scale */
+    font-size: 0.8rem; /* 👈 change this to scale */
     border: 0.125em solid currentColor;
     border-radius: 2em;
     cursor: pointer;
@@ -30,6 +30,7 @@
     border-radius: 1em;
     position: absolute;
     z-index: 1;
+   
   }
   
   .toggle::after {
@@ -38,6 +39,7 @@
     right: 0.5em;
     top: 0.57m;
     width: 1.125em;
+    
   }
   
   .toggle::before {

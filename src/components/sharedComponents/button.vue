@@ -13,9 +13,8 @@
     </button>
   </div>
 </template>
-<script>
-export default {
-  props: [
+<script setup>
+const props = defineProps([
     "textColor",
     "bgColor",
     "onHoverBgColor",
@@ -24,6 +23,5 @@ export default {
     "name",
     "svg",
     "additionalClass"
-  ],
-};
+  ]);
 </script>

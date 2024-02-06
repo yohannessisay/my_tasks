@@ -1,11 +1,17 @@
 <template>
-     <div class="border shadow-md p-4 mt-24 rounded-md h-2/3 w-2/5">
+<div class="flex justify-center ">
+     <div class="flex justify-center border shadow-md p-4 mt-24 rounded-md h-2/3 w-2/5">
       <div class="flex justify-center mb-12">
         <h2 class="text-3xl">Welcome,Register ezi ga tolo</h2>
       </div>
-
+    <router-link to="/">
+      <h2 class="text-base mt-4 text-primary dark:text-white">
+        Already have an account? <span class="text-blue-600">Login here</span>
+      </h2>
+    </router-link>
  
     </div>
+</div>
 </template>
 <script setup>
 const loginButtonSVG =
